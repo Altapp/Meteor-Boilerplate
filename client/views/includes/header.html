@@ -1,0 +1,41 @@
+<template name="header">
+<header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <span class="navbar-brand logo">
+                    <a href="{{pathFor 'home'}}">Brand!</a>
+                </span>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="{{activeRouteClass ''}}">
+                        <a href="#">Link</a></li>
+                    <li class="dropdown {{activeRouteClass ''}}">
+                        <a href="#" class="dropdown-toggle {{activeRouteClass ''}}" data-toggle="dropdown">
+                            Drop Down
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-right navbar-nav">
+                    {{> loginButtons }}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+</template>
