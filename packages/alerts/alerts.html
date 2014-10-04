@@ -1,0 +1,31 @@
+<template name="alerts">
+<div class="alerts">
+    {{#each alerts}}
+    {{> alert}}
+    {{/each}}
+</div>
+</template>
+
+<template name="alert">
+<div class="alert alert-{{color}} alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <strong>
+    	{{#if $eq color 'danger'}}
+    		Error:
+    	{{else}}
+	    	{{#if $eq color 'success'}}
+	    		Success:
+	    	{{else}}
+		    	{{#if $eq color 'info'}}
+		    		Info:
+		    	{{else}}
+			    	{{#if $eq color 'warning'}}
+			    		Warning:
+			    	{{/if}}
+		    	{{/if}}
+	    	{{/if}}
+    	{{/if}}
+    </strong>
+    {{message}}
+</div>
+</template>

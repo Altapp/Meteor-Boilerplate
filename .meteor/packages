@@ -5,6 +5,9 @@
 
 meteor-platform
 iron:router
-pinglamb:bootstrap3
 ian:accounts-ui-bootstrap-3
 accounts-password
+reywood:bootstrap3-sass
+alerts
+reywood:font-awesome-sass
+
