@@ -11,6 +11,6 @@ Contains:
 - Index, Header, Footer, 404
 - Other misc skeletal features
 
-[See Demo](http://altapp-boilerpate.meteor.com)
+[See Demo](http://altapp-boilerplate.meteor.com)
 
 ![Screenshot](Screenshot.png)
